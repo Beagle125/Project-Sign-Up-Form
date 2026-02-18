@@ -26,7 +26,10 @@ body{
 }
 
 #content-section{
+    flex-direction: column;
     padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
     flex-basis: 60%;
 }
 
@@ -44,6 +47,10 @@ body{
     top: 10%;
 }
 
+.content-header{
+    font-family: Arial, Helvetica, sans-serif; /*to be changed*/
+    font-size: 2em;
+}
 
 @media(min-width: 768px){
     body{
@@ -67,6 +74,10 @@ body{
     }
 
     #content-section{
+        flex-direction: column;
+        padding-top: 8%;
+        padding-left: 5%;
+        padding-right: 5%;
         flex-basis: 60%;
     }
     .image-banner{
@@ -81,6 +92,10 @@ body{
         font-size: 3rem;
         position: relative;
         top: 10%;
+    }
+    .content-header{
+        font-family: Arial, Helvetica, sans-serif; /*to be changed*/
+        font-size: 2em;
     }
 
 }
