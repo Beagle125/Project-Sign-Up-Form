@@ -50,6 +50,7 @@ body{
 .content-header{
     font-family: Arial, Helvetica, sans-serif; /*to be changed*/
     font-size: 2em;
+    text-align: center;
 }
 
 @media(min-width: 768px){
@@ -96,6 +97,7 @@ body{
     .content-header{
         font-family: Arial, Helvetica, sans-serif; /*to be changed*/
         font-size: 2em;
+        text-align: left;
     }
 
 }

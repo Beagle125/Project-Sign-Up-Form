@@ -23,23 +23,38 @@
                 </p>
             </div>
             <form action="./" method="get">
-                <h1>Let's Do This!</h1>
-                <fieldset>
-                    <legend>Guest Name</legend>
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name">
+                <div class="form-body">
+                    <h1>Let's Do This!</h1>
+                    <fieldset>
+                        <legend>Guest Name</legend>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
 
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name">
-                </fieldset>
-                <fieldset>
-                    <legend>Guest Contact</legend>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Guest Contact</legend>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
 
-                    <label for="phone_number">Phone Number</label>
-                    <input type="tel" id="phone_number" name="phone_number">
-                </fieldset>
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Services</legend>
+                        <label for="services">Select Service</label>
+                        <select id="services" name="services">
+                            <option value="select_service" selected disabled>Select Service</option>
+                            <option value="massage_therapy">Massage Therapy</option>
+                            <option value="body_treatments">Body Treatments</option>
+                            <option value="skin_care">Skin Care</option>
+                            <option value="grooming">Grooming</option>
+                            <option value="specialty">Specialty</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <button type="submit">Submit</button>
             </form>
             <div class="content-footer">
 
