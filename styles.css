@@ -30,13 +30,12 @@ body{
 }
 
 #content-section{
-    position: relative;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
     flex-basis: 60%;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
 }
 
 .image-banner{
@@ -63,7 +62,7 @@ form{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 fieldset{
@@ -76,12 +75,24 @@ legend{
 }
 
 .form-body{
-    position: absolute;
     box-sizing: border-box;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 250, 250);
     width: 100%;
+    box-shadow: black 0px 5px 2px;
+}   
+
+button{
+    background-color: rgb(93, 112, 83);
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    margin-top: 4%;
 }
+
+
 
 @media(min-width: 768px){
     body{
@@ -105,10 +116,8 @@ legend{
     }
 
     #content-section{
-        position: relative;
         flex-direction: column;
-        padding-top: 8%;
-        padding-left: 0%;
+        padding-top: 1%;
         padding-right: 5%;
         flex-basis: 60%;
         background-color: rgb(240, 240, 240);
@@ -130,6 +139,8 @@ legend{
         font-family: Arial, Helvetica, sans-serif; /*to be changed*/
         font-size: 2em;
         text-align: left;
+        padding-left: 8%;
+
     }
 
     form{
@@ -137,6 +148,7 @@ legend{
         align-items: start;
         text-align: left;
         justify-content: space-between;
+        width: 100%;
     }
 
     fieldset{
@@ -145,12 +157,25 @@ legend{
     }
 
     .form-body{
-        position: absolute;
         box-sizing: border-box;
         flex-direction: column;
         background-color: rgb(250, 250, 250);
         width: 100%;
+        padding: 5% 8%;
+        margin-left: 1%;
+        box-shadow: black -2px 5px 2px;
     }   
+
+    button{
+        background-color: rgb(93, 112, 83);
+        border-radius: 10px;
+        font-size: large;
+        color: white;
+        height: 3rem;
+        width: 10rem;
+        margin-top: 2%;
+        margin-left: 9%;
+    }
 
 }
 
