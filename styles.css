@@ -1,8 +1,12 @@
 body,
+form,
+fieldset,
+legend,
 #main-section,
 #image-section,
 #content-section,
-.image-banner{
+.image-banner,
+.form-body{
     display: flex;
 }
 
@@ -26,11 +30,13 @@ body{
 }
 
 #content-section{
+    position: relative;
     flex-direction: column;
     padding-top: 8%;
     padding-left: 5%;
     padding-right: 5%;
     flex-basis: 60%;
+    background-color: rgb(250, 250, 250);
 }
 
 .image-banner{
@@ -49,8 +55,32 @@ body{
 
 .content-header{
     font-family: Arial, Helvetica, sans-serif; /*to be changed*/
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+}
+
+form{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+fieldset{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+legend{
+    justify-content: space-around;
+}
+
+.form-body{
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 @media(min-width: 768px){
@@ -75,11 +105,13 @@ body{
     }
 
     #content-section{
+        position: relative;
         flex-direction: column;
         padding-top: 8%;
-        padding-left: 5%;
+        padding-left: 0%;
         padding-right: 5%;
         flex-basis: 60%;
+        background-color: rgb(240, 240, 240);
     }
     .image-banner{
         justify-content: center;
@@ -99,6 +131,26 @@ body{
         font-size: 2em;
         text-align: left;
     }
+
+    form{
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    fieldset{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .form-body{
+        position: absolute;
+        box-sizing: border-box;
+        flex-direction: column;
+        background-color: rgb(250, 250, 250);
+        width: 100%;
+    }   
 
 }
 
