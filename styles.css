@@ -1,9 +1,11 @@
 body,
+form,
 #main-section,
 #image-section,
 #form-section,
 .image-banner,
 .button-container,
+.form-body,
 .form-col{
     display: flex;
 }
@@ -34,7 +36,7 @@ body{
 
 #form-section{
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding-top: 8%;
     flex-basis: 60%;
@@ -61,11 +63,32 @@ body{
     font-family: var(--primary-font), Helvetica, sans-serif;
 }
 
+form{
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    font-family: var(--primary-font), Arial, Helvetica, sans-serif;
+}
+
+.form-body{
+    justify-content: center;
+    gap: 2%;
+}
+
+.form-col{
+    flex-direction: column;
+}
+
 @media(min-width: 768px){
     body{
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+
+        --primary-font: Arial;
+        --background-color: rgb(220, 220, 220);
+        --forms-color: white
     }
 
     #main-section{
@@ -84,7 +107,7 @@ body{
 
     #form-section{
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding-top: 1%;
         flex-basis: 60%;
         background-color: var(--background-color);
@@ -111,9 +134,21 @@ body{
     }
 
     form{
+        flex-direction: column;
+        align-items: flex-start;
         background-color: white;
         width: 100%;
-        
+        font-family: var(--primary-font), Arial, Helvetica, sans-serif;
+    }
+
+    /* For large screens only for padding purpose*/
+    h2{
+        padding-left: 4%;
+    }
+    .form-body{
+        justify-content: flex-start;
+        gap: 2%;
+        padding-left: 4%;
     }
 
     .form-col{
