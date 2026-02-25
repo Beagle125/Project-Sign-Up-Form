@@ -6,7 +6,8 @@ form,
 .image-banner,
 .button-container,
 .form-body,
-.form-col{
+.form-col,
+.form-footer{
     display: flex;
 }
 
@@ -86,6 +87,25 @@ form{
     gap: 4%;
 }
 
+.form-footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    width: 100%;
+    font-family: var(--primary-font), Helvetica, sans-serif;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #596d48;
+    box-shadow: black 4px 4px 5px;
+}
+
 @media(min-width: 768px){
     body{
         margin: 0;
@@ -149,7 +169,7 @@ form{
         padding-bottom: 6%;
     }
 
-    /* For large screens only for padding purpose*/
+    /*  h1 style For large screens only for padding purpose*/
     h1{
         padding-left: 4%;
     }
@@ -162,6 +182,25 @@ form{
     .form-col{
         flex-direction: column;
         gap: 4%;
+    }
+
+    .form-footer{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 8%;
+        width: 100%;
+        font-family: var(--primary-font), Helvetica, sans-serif;
+    }
+
+    button{
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px 25px;
+        color: white;
+        background-color: #596d48;
+        box-shadow: black 4px 4px 5px;
     }
 }
 
