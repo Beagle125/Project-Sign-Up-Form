@@ -7,6 +7,7 @@ form,
 .button-container,
 .form-body,
 .form-col,
+.form-input,
 .form-footer{
     display: flex;
 }
@@ -86,6 +87,14 @@ form{
 .form-col{
     flex-direction: column;
     gap: 4%;
+}
+
+input{
+    width: 10rem;
+}
+
+.form-input{
+    flex-direction: column;
 }
 
 .form-footer{
@@ -176,13 +185,21 @@ button{
     }
     .form-body{
         justify-content: flex-start;
-        gap: 2%;
+        gap: 8%;
         padding-left: 4%;
+    }
+
+    input{
+        width: 12rem;
     }
 
     .form-col{
         flex-direction: column;
-        gap: 4%;
+        gap: 6%;
+    }
+
+    .form-input{
+        flex-direction: column;
     }
 
     .form-footer{
