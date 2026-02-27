@@ -23,7 +23,8 @@ body{
     --header-font-size: 2rem;
 
     --background-color: rgb(220, 220, 220);
-    --forms-color: white
+    --forms-color: white;
+    --forms-color-text: rgb(100, 100, 100);
 }
 
 #main-section{
@@ -72,26 +73,40 @@ body{
 form{
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--forms-color);
     width: 100%;
     font-family: var(--primary-font), Arial, Helvetica, sans-serif;
     padding-bottom: 6%;
     box-shadow: black 0px 8px 5px;
+    color: var(--forms-color-text)
 }
 
 .form-body{
     justify-content: center;
+    width: 100%;
     gap: 2%;
 }
 
 .form-col{
     flex-direction: column;
-    gap: 4%;
+    gap: 6%;
 }
 
-input{
-    width: 10rem;
-}
+    /* Various styles for inputs for validity*/
+    input{
+        width: 12rem;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: var(--forms-color-text);
+    }
+
+    input:user-invalid{
+        border-color: red;
+    }
+
+    input:user-valid{
+        border-color: green;
+    }
 
 .form-input{
     flex-direction: column;
@@ -172,11 +187,12 @@ button{
     form{
         flex-direction: column;
         align-items: flex-start;
-        background-color: white;
+        background-color: var(--forms-color);
         width: 100%;
         font-family: var(--primary-font), Arial, Helvetica, sans-serif;
         padding-bottom: 6%;
         box-shadow: black -4px 8px 5px;
+        color: var(--forms-color-text);
     }
 
     /*  h1 style For large screens only for padding purpose*/
@@ -185,17 +201,30 @@ button{
     }
     .form-body{
         justify-content: flex-start;
+        width: 100%;
         gap: 8%;
         padding-left: 4%;
     }
 
+    /* Various styles for inputs for validity*/
     input{
         width: 12rem;
+        border-style: solid;
+        border-color: var(--forms-color-text);
+        border-radius: 5px;
+    }
+
+    input:user-invalid{
+        border-color: red;
+    }
+
+    input:user-valid{
+        border-color: green;
     }
 
     .form-col{
         flex-direction: column;
-        gap: 6%;
+        gap: 12%;
     }
 
     .form-input{
